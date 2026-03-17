@@ -35,6 +35,47 @@
       background: rgba(0,0,0,0.3); /* ajuste l’opacité si nécessaire */
       z-index: 0;
     }
+
+    
+    /* --- AJOUTÉ : uniformiser toutes les images/GIFs et containers --- */
+
+    /* Container horizontal pour aligner les éléments */
+    .container {
+      display: flex;
+      justify-content: space-around; /* espace entre les éléments */
+      flex-wrap: wrap; /* passe à la ligne si trop d’éléments */
+      margin: 20px 0;
+      position: relative;
+      z-index: 1; /* au-dessus du fond */
+    }
+
+    /* Toutes les images et GIFs dans les containers */
+    .container img {
+      width: 250px;       /* largeur uniforme */
+      height: 250px;      /* hauteur uniforme */
+      object-fit: cover;  /* recadre sans déformer */
+      margin: 10px;
+      border-radius: 10px; /* optionnel, coins arrondis */
+    }
+
+    /* Texte dans container */
+    .text-box {
+      width: 250px;       /* même largeur que les images pour alignement */
+      margin: 10px;
+      text-align: left;
+    }
+
+    /* Pour le GIF en haut de page (avant les containers) */
+    img[src="55C3BD8C-923F-4E1C-9657-C8CCE4B0809C.gif"]:first-of-type {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 20px auto;
+      display: block;
+      position: relative;
+      z-index: 1;
+    }
   </style>
 
 </head>
