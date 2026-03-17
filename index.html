@@ -2,13 +2,45 @@
 <html>
 <head>
   <title>juzo34's world</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+  <style>
+    /* Fond GIF full screen */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Nunito', sans-serif;
+      color: white;
+      text-align: center;
+
+      /* Fond GIF */
+      background: url('56C4F075-A776-4EFC-BA9E-AC5645A53846.gif') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* Pour que le texte soit au-dessus du GIF */
+    h1, p {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Optionnel : ajouter un léger overlay sombre pour mieux voir le texte */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.3); /* ajuste l’opacité si nécessaire */
+      z-index: 0;
+    }
+  </style>
+
 </head>
- <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-<body style="background:black; color:white; text-align:center; font-family:Nunito;">
+
+<body>
   <h1> 愛 JUZO 愛 </h1>
-  
   <p> " t'sais tes mots j'men suis rappelé, ça ma laissé des balafres " <br> - 34murphy </p>
-  
-  <img src="55C3BD8C-923F-4E1C-9657-C8CCE4B0809C.gif">
 </body>
 </html>
