@@ -51,8 +51,8 @@
 
     /* Toutes les images et GIFs dans les containers */
     .container img {
-      width: 250px;       /* largeur uniforme */
-      height: 250px;      /* hauteur uniforme */
+      width: 350px;       /* largeur uniforme */
+      height: 350px;      /* hauteur uniforme */
       object-fit: cover;  /* recadre sans déformer */
       margin: 10px;
       border-radius: 10px; /* optionnel, coins arrondis */
@@ -65,17 +65,6 @@
       text-align: left;
     }
 
-    /* Pour le GIF en haut de page (avant les containers) */
-    img[src="55C3BD8C-923F-4E1C-9657-C8CCE4B0809C.gif"]:first-of-type {
-      width: 250px;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 10px;
-      margin: 20px auto;
-      display: block;
-      position: relative;
-      z-index: 1;
-    }
   </style>
 
 </head>
@@ -102,6 +91,7 @@
       <p> <br> <br> <br> a 13 ans j'rêvais d'être pas né</p>
     </div>
     <br>
+    
     <!-- Ligne 3 : GIF panoramique full width -->
 <div class="wide-gif-container">
   <img src="9CB30BFD-6AE2-48CC-8A5D-5B3499218B38.gif" alt="GIF panoramique">
@@ -118,9 +108,8 @@
   }
 
   .wide-gif-container img {
-    width: 100%;      /* prend toute la largeur */
+    width: 600px;      /* prend toute la largeur */
     height: auto;     /* conserve les proportions */
-    max-height: 500px; /* limite la hauteur pour pas que ça devienne énorme */
     object-fit: cover; /* recadre si nécessaire */
   }
 </style>
