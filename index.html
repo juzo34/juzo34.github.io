@@ -101,6 +101,29 @@
     <div class="text-box">
       <p> <br>a 13 ans j'rêvais d'être pas né</p>
     </div>
+    
+    <!-- Ligne 3 : GIF panoramique full width -->
+<div class="wide-gif-container">
+  <img src="9CB30BFD-6AE2-48CC-8A5D-5B3499218B38.gif" alt="GIF panoramique">
+</div>
+
+<style>
+  /* Ligne 3 : GIF panoramique full width */
+  .wide-gif-container {
+    display: flex;
+    justify-content: center; /* centrer le GIF */
+    margin: 20px 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .wide-gif-container img {
+    width: 100%;      /* prend toute la largeur de la page */
+    height: auto;     /* conserve les proportions */
+    max-height: 500px; /* optionnel : limite la hauteur si nécessaire */
+    object-fit: cover; /* recadrage si nécessaire */
+  }
+</style>
   </div>
   
 </body>
