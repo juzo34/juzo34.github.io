@@ -13,12 +13,18 @@
       color: white;
       text-align: center;
 
-      /* GIF de fond */
+      /* Fond GIF */
       background: url('56C4F075-A776-4EFC-BA9E-AC5645A53846.gif') no-repeat center center fixed;
       background-size: cover;
     }
 
-    /* Overlay léger pour que le texte soit lisible */
+    /* Pour que le texte soit au-dessus du GIF */
+    h1, p {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Optionnel : ajouter un léger overlay sombre pour mieux voir le texte */
     body::before {
       content: "";
       position: fixed;
@@ -26,35 +32,19 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0,0,0,0.3); /* ajuste l’opacité */
+      background: rgba(0,0,0,0.3); /* ajuste l’opacité si nécessaire */
       z-index: 0;
-    }
-
-    /* Texte au-dessus du GIF de fond */
-    h1, p, .gif-visible {
-      position: relative;
-      z-index: 1;
-    }
-
-    /* Ajuste la taille du GIF visible si besoin */
-    .gif-visible {
-      width: 300px; /* tu peux changer */
-      margin-top: 20px;
     }
   </style>
 
 </head>
 
 <body>
+  
   <h1> 愛 JUZO 愛 </h1>
+  
   <p> " t'sais tes mots j'men suis rappelé, ça ma laissé des balafres " <br> - 34murphy </p>
 
-  <!-- GIF visible sur la page -->
-  <img class="gif-visible" src="55C3BD8C-923F-4E1C-9657-C8CCE4B0809C.gif" alt="GIF Juzo">
-</body>
-</html>
-<body>
-  <h1> 愛 JUZO 愛 </h1>
-  <p> " t'sais tes mots j'men suis rappelé, ça ma laissé des balafres " <br> - 34murphy </p>
+  <img src="mongif.gif">
 </body>
 </html>
